@@ -5,8 +5,78 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Juego_LOTEREST"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="LOTEREST" Height="658" Width="1290" Icon="Recursos/LOTEREST.png" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" WindowStartupLocation="CenterScreen">
+    <Grid Width="1290" Height="654">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="936*"/>
+            <ColumnDefinition Width="347*"/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" Height="654" Margin="0" VerticalAlignment="Top" Width="1290" Grid.ColumnSpan="2" Source="Recursos/fondo 1290 x 654.png"/>
+        <Rectangle HorizontalAlignment="Left" Height="415" Margin="577,187,0,0" VerticalAlignment="Top" Width="376" Grid.ColumnSpan="2">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="Black" Opacity="0.46"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <TextBox x:Name="textBoxNombreDeUsuarioCrearCuenta" HorizontalAlignment="Left" Height="30" Margin="644,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" BorderBrush="{x:Null}" Foreground="#FF04547C" SelectionBrush="#FFCCE4E4" FontFamily="Calibri Light" FontSize="18">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.8"/>
+            </TextBox.Background>
+        </TextBox>
+        <Image HorizontalAlignment="Left" Height="387" Margin="160,172,0,0" VerticalAlignment="Top" Width="294" Source="Recursos/LOTEREST.png"/>
+        <Rectangle HorizontalAlignment="Left" Height="150" Margin="-5,0,0,0" VerticalAlignment="Top" Width="1290" Grid.ColumnSpan="2">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#FF04C4DC" Opacity="0.75"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image HorizontalAlignment="Left" Height="60" Margin="111,560,0,0" VerticalAlignment="Top" Width="52" Source="Recursos/Internacionalización.png"/>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="411" Margin="159.667,219,0,0" VerticalAlignment="Top" Width="178" Source="Recursos/Cartas fondo.png"/>
+        <TextBox x:Name="textBoxCorreoElectronicoIniciarSesion" HorizontalAlignment="Left" Height="30" Margin="613,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" BorderBrush="{x:Null}" Foreground="#FF04547C" SelectionBrush="#FFCCE4E4" FontFamily="Calibri Light" FontSize="18">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.8"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="textBoxCorreoElectronicoCrearCuenta" HorizontalAlignment="Left" Height="30" Margin="644,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" BorderBrush="{x:Null}" Foreground="#FF04547C" SelectionBrush="#FFCCE4E4" FontFamily="Calibri Light" FontSize="18">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.8"/>
+            </TextBox.Background>
+        </TextBox>
+        <PasswordBox x:Name="passwordBoxContraseniaIniciarSesion" HorizontalAlignment="Left" Margin="877,66,0,0" VerticalAlignment="Top" Width="250" Height="30" FontFamily="Calibri Light" FontSize="18" FontWeight="Bold" BorderBrush="{x:Null}" SelectionBrush="#FFCCE4E4" Grid.ColumnSpan="2">
+            <PasswordBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.8"/>
+            </PasswordBox.Background>
+            <PasswordBox.Foreground>
+                <SolidColorBrush Color="#FF04547C"/>
+            </PasswordBox.Foreground>
+        </PasswordBox>
+        <PasswordBox x:Name="passwordBoxRepetirContraseniaCrearCuenta" HorizontalAlignment="Left" Margin="644,486,0,0" VerticalAlignment="Top" Width="250" Height="30" FontFamily="Calibri Light" FontSize="18" FontWeight="Bold" BorderBrush="{x:Null}" SelectionBrush="#FFCCE4E4" Foreground="#FF04547C">
+            <PasswordBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.8"/>
+            </PasswordBox.Background>
+        </PasswordBox>
+        <PasswordBox x:Name="PasswordBoxContraseniaCrearCuenta" HorizontalAlignment="Left" Margin="644,416,0,0" VerticalAlignment="Top" Width="250" Height="30" FontFamily="Calibri Light" FontSize="18" FontWeight="Bold" BorderBrush="{x:Null}" SelectionBrush="#FFCCE4E4" Foreground="#FF04547C">
+            <PasswordBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.8"/>
+            </PasswordBox.Background>
+        </PasswordBox>
+        <ComboBox HorizontalAlignment="Left" Margin="167,574,0,0" VerticalAlignment="Top" Width="183" Height="29" BorderBrush="#FF04547C" Foreground="#FF04547C">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <Label Content="CREAR CUENTA" HorizontalAlignment="Left" Margin="642,190,0,0" VerticalAlignment="Top" Foreground="#FFEC248C" FontFamily="Calibri Light" FontSize="36"/>
+        <Label Content="Nombre de usuario:" HorizontalAlignment="Left" Margin="644,248,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Calibri Light" FontSize="16" FontWeight="ExtraBold"/>
+        <Label Content="Correo electrónico:" HorizontalAlignment="Left" Margin="644,318,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Calibri Light" FontSize="16" FontWeight="ExtraBold"/>
+        <Label Content="Contraseña:" HorizontalAlignment="Left" Margin="644,386,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Calibri Light" FontSize="16" FontWeight="ExtraBold"/>
+        <Label Content="Repetir contraseña:" HorizontalAlignment="Left" Margin="645,456,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Calibri Light" FontSize="16" FontWeight="ExtraBold"/>
+        <Button x:Name="buttonSiguienteIniciarSesion" Content="SIGUIENTE" HorizontalAlignment="Left" Margin="718,554,0,0" VerticalAlignment="Top" Background="White" BorderBrush="White" Foreground="#FF04547C" FontFamily="Calibri Light" FontSize="18" FontWeight="ExtraBold" Padding="5,1"/>
+        <Label Content="Correo electrónico:" HorizontalAlignment="Left" Margin="615,37,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Calibri Light" FontSize="16" FontWeight="ExtraBold"/>
+        <Button x:Name="buttonIngresarIniciarSesion" Content="INGRESAR" HorizontalAlignment="Left" Margin="218.667,65,0,0" VerticalAlignment="Top" Background="White" BorderBrush="White" Foreground="#FF04C4DC" FontFamily="Calibri Light" FontSize="18" FontWeight="ExtraBold" Padding="5,1" Grid.Column="1" Height="30"/>
+        <Label Content="Contraseña:" HorizontalAlignment="Left" Margin="879,36,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Calibri Light" FontSize="16" FontWeight="ExtraBold" Grid.ColumnSpan="2"/>
+        <Label Content="¿Has olvidado los datos de la cuenta?" HorizontalAlignment="Left" Margin="746,110,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Calibri Light" FontSize="16" FontWeight="ExtraBold" Grid.ColumnSpan="2"/>
+
     </Grid>
 </Window>

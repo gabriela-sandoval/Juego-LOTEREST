@@ -94,5 +94,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Recursos\Internacionalización.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Recursos\Cartas fondo.png" />
+    <Resource Include="Recursos\fondo 1290 x 654.png" />
+    <Resource Include="Recursos\LOTEREST.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
