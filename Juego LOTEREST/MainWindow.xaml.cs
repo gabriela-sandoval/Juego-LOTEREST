@@ -24,5 +24,19 @@ namespace Juego_LOTEREST
         {
             InitializeComponent();
         }
+
+        private void buttonSiguienteIniciarSesion_Click(object sender, RoutedEventArgs e)
+        {
+            using (Models.ModelsContainer db = new Models.ModelsContainer())
+            {
+                var oUsuario = new Models.Usuario();
+                oUsuario.nombre = textBoxNombreDeUsuarioCrearCuenta.Text;
+                oUsuario.email = textBoxCorreoElectronicoCrearCuenta.Text;
+                oUsuario.contrasena = PasswordBoxContraseniaCrearCuenta.Password;
+
+                db.Usuarios.Add(oUsuario);
+                db.SaveChanges();
+            }
+        }
     }
 }
