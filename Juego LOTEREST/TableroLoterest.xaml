@@ -1,0 +1,27 @@
+﻿<Window x:Class="Juego_LOTEREST.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Juego_LOTEREST"
+        mc:Ignorable="d"
+        Title="Window2" Height="658" Width="1290">
+    <Grid x:Name="tableroLoterest">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" Height="668" Margin="1,0,-7.667,-39.333" VerticalAlignment="Top" Width="1290" Source="Recursos/fondo 1290 x 654.png" Grid.ColumnSpan="2"/>
+        <WindowsFormsHost x:Name="windowsFormHostChat" HorizontalAlignment="Left" Height="654" Margin="-1,-1,0,-24.333" VerticalAlignment="Top" Width="300" RenderTransformOrigin="-0.696,-0.318" Foreground="{x:Null}"/>
+        <Image HorizontalAlignment="Left" Height="590" Margin="396,52,0,-13.333" VerticalAlignment="Top" Width="395" Source="Recursos/tablero.png"/>
+        <Button Content="SELECCIONAR" HorizontalAlignment="Left" Margin="942,246,0,0" VerticalAlignment="Top" Width="180" Height="60" Click="Button_Click" BorderBrush="White" Foreground="White" FontFamily="Calibri Light" FontWeight="Bold" FontSize="24">
+            <Button.Background>
+                <SolidColorBrush Color="#FFEC248C" Opacity="0.75"/>
+            </Button.Background>
+        </Button>
+        <Button Content="SELECCIONAR" HorizontalAlignment="Left" Margin="944,357,0,0" VerticalAlignment="Top" Width="180" Height="60" Click="Button_Click" BorderBrush="White" Foreground="White" FontFamily="Calibri Light" FontWeight="Bold" FontSize="24">
+            <Button.Background>
+                <SolidColorBrush Color="#FFEC248C" Opacity="0.75"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
