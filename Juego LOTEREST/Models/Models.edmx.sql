@@ -2,8 +2,8 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 10/05/2019 14:15:35
--- Generated from EDMX file: C:\Users\ThinkCentre\Documents\GitHub\Juego-LOTEREST\Juego LOTEREST\Models\Models.edmx
+-- Date Created: 10/06/2019 15:08:06
+-- Generated from EDMX file: C:\Users\USER8\source\repos\Juego LOTEREST\Juego LOTEREST\Models\Models.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
@@ -22,6 +22,9 @@ GO
 -- Dropping existing tables
 -- --------------------------------------------------
 
+IF OBJECT_ID(N'[dbo].[Usuarios]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Usuarios];
+GO
 
 -- --------------------------------------------------
 -- Creating all tables

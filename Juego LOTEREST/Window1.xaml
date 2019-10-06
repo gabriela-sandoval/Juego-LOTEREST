@@ -5,12 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Juego_LOTEREST"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="603*"/>
-            <ColumnDefinition Width="190*"/>
-        </Grid.ColumnDefinitions>
-
+        Title="LOTEREST" Height="658" Width="1290" MinWidth="1290" MinHeight="654" Icon="Recursos/LOTEREST.png">
+    <Grid Margin="-1,-2,-5.667,-23.333">
+        <Image HorizontalAlignment="Left" Height="654" VerticalAlignment="Top" Width="1290" Source="Recursos/fondo 1290 x 654.png"/>
+        <Rectangle HorizontalAlignment="Left" Height="654" Margin="0,1,0,-1" VerticalAlignment="Top" Width="300">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#FF04C4DC" Opacity="0.75"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image HorizontalAlignment="Left" Height="400" Margin="463,122,0,0" VerticalAlignment="Top" Width="280" Source="Recursos/Loteria - imagen sin fondo.png"/>
+        <Image HorizontalAlignment="Left" Height="400" Margin="812,114,0,0" VerticalAlignment="Top" Width="280" Source="Recursos/dados sin fondo.png"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="1185,516,0,0" VerticalAlignment="Top" Width="100" Source="Recursos/LOTEREST.png"/>
+        <Button Content="IDIOMA" HorizontalAlignment="Left" Margin="1,197,0,0" VerticalAlignment="Top" Width="300" Height="70" FontFamily="Calibri Light" FontSize="36" FontWeight="Bold" BorderBrush="White" Foreground="White">
+            <Button.Background>
+                <SolidColorBrush Color="#FF04C4DC" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <Button Content="¿CÓMO JUGAR?" HorizontalAlignment="Left" Margin="1,296,0,0" VerticalAlignment="Top" Width="300" Height="70" FontFamily="Calibri Light" FontSize="36" FontWeight="Bold" BorderBrush="White" Foreground="White">
+            <Button.Background>
+                <SolidColorBrush Color="#FF04C4DC" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <Button Content="LOGROS" HorizontalAlignment="Left" Margin="-1,396,0,0" VerticalAlignment="Top" Width="300" Height="70" FontFamily="Calibri Light" FontSize="36" FontWeight="Bold" BorderBrush="White" Foreground="White">
+            <Button.Background>
+                <SolidColorBrush Color="#FF04C4DC" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <Button Content="ACERCA DE" HorizontalAlignment="Left" Margin="-3,492,0,0" VerticalAlignment="Top" Width="300" Height="70" FontFamily="Calibri Light" FontSize="36" FontWeight="Bold" BorderBrush="White" Foreground="White">
+            <Button.Background>
+                <SolidColorBrush Color="#FF04C4DC" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <Button Content="SALIR" HorizontalAlignment="Left" Margin="3,583,0,0" VerticalAlignment="Top" Width="300" Height="70" FontFamily="Calibri Light" FontSize="36" FontWeight="Bold" BorderBrush="White" Foreground="White">
+            <Button.Background>
+                <SolidColorBrush Color="#FF04C4DC" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="100" Margin="94,48,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.041,0.212" Source="Recursos/user.png"/>
     </Grid>
 </Window>

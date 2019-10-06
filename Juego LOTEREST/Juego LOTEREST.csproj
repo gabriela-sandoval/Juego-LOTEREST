@@ -156,6 +156,9 @@
       <LastGenOutput>Models.cs</LastGenOutput>
       <DependentUpon>Models.edmx</DependentUpon>
     </Content>
+    <Resource Include="Recursos\user.png" />
+    <Resource Include="Recursos\dados sin fondo.png" />
+    <Resource Include="Recursos\Loteria - imagen sin fondo.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
