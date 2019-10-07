@@ -74,6 +74,9 @@
     <Compile Include="TableroLoterest.xaml.cs">
       <DependentUpon>TableroLoterest.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Verificacion.xaml.cs">
+      <DependentUpon>Verificacion.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -91,6 +94,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TableroLoterest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Verificacion.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -167,6 +174,9 @@
       <LastGenOutput>Models.cs</LastGenOutput>
       <DependentUpon>Models.edmx</DependentUpon>
     </Content>
+    <Resource Include="Recursos\emoji.png" />
+    <Resource Include="Recursos\enviar.png" />
+    <Resource Include="Recursos\fonco chat.png" />
     <Resource Include="Recursos\tablero.png" />
     <Resource Include="Recursos\user.png" />
     <Resource Include="Recursos\dados sin fondo.png" />

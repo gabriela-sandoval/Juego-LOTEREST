@@ -23,7 +23,7 @@
                 <SolidColorBrush Color="White" Opacity="0.8"/>
             </TextBox.Background>
         </TextBox>
-        <Image HorizontalAlignment="Left" Height="387" Margin="160,172,0,0" VerticalAlignment="Top" Width="294" Source="Recursos/LOTEREST.png"/>
+        <Image HorizontalAlignment="Left" Height="387" Margin="160,172,0,0" VerticalAlignment="Top" Width="270" Source="Recursos/LOTEREST.png"/>
         <Rectangle HorizontalAlignment="Left" Height="150" Margin="-5,0,0,0" VerticalAlignment="Top" Width="1290" Grid.ColumnSpan="2">
             <Rectangle.Fill>
                 <SolidColorBrush Color="#FF04C4DC" Opacity="0.75"/>
