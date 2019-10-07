@@ -38,5 +38,20 @@ namespace Juego_LOTEREST
                 db.SaveChanges();
             }
         }
+
+        private void buttonIngresarIniciarSesion_Click(object sender, RoutedEventArgs e)
+        {
+            using (Models.ModelsContainer db = new Models.ModelsContainer())
+            {
+
+                foreach (var oUsuario in db.Usuarios)
+                {
+                    if ((oUsuario.email.Equals(textBoxCorreoElectronicoIniciarSesion.Text)) && (oUsuario.contrasena.Equals(passwordBoxContraseniaIniciarSesion.Password)))
+                    {
+                        MessageBox.Show("Coincide el correo y la contraseña");
+                    }
+                }
+            }
+        }
     }
 }
